@@ -263,7 +263,11 @@
 			if("load")
 				if(cloning)
 					return
+<<<<<<< HEAD
 				var/input = capped_multiline_input(usr, "Put your code there:", "loading", "", CIRCUIT_CODE_MAXLENGTH)
+=======
+				var/input = capped_multiline_input(usr, "Put your code there:", "loading", max_length = MAX_SIZE_CIRCUIT)
+>>>>>>> 8a84ae202fa9138f36946d8f80ff83d4996e731e
 				if(!check_interactivity(usr) || cloning)
 					return
 				if(!input)
